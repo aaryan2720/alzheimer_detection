@@ -1,0 +1,12 @@
+GAT Model — Classification Report
+==================================================
+                    precision    recall  f1-score   support
+
+     Mild Demented       0.55      0.98      0.70       896
+ Moderate Demented       0.30      1.00      0.46        64
+      Non Demented       0.95      0.50      0.66      3200
+Very Mild Demented       0.62      0.80      0.70      2240
+
+          accuracy                           0.68      6400
+         macro avg       0.60      0.82      0.63      6400
+      weighted avg       0.77      0.68      0.68      6400

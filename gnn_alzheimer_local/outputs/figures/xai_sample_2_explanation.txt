@@ -1,0 +1,19 @@
+=== GAT Prediction Explanation ===
+True Label     : Non Demented
+Predicted Label: Non Demented  (confidence: 97.6%)
+
+Class Probabilities:
+  Mild Demented             0.06%
+  Moderate Demented         0.00%
+  Non Demented              97.58%
+  Very Mild Demented        2.37%
+
+Top-3 Most Influential Brain Regions (Nodes):
+  Rank 1: Node 117 (Grid Row 9, Col 6 | Pixel centre ≈ [136,88]) — Importance: 0.9759
+  Rank 2: Node  51 (Grid Row 4, Col 10 | Pixel centre ≈ [56,152]) — Importance: 0.8682
+  Rank 3: Node   2 (Grid Row 1, Col 3 | Pixel centre ≈ [8,40]) — Importance: 0.8548
+
+Interpretation:
+  The model focused primarily on brain regions around
+  rows 9-1 of the patch grid, which correspond to cortical
+  areas commonly affected in Alzheimer's Disease.

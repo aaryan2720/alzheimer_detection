@@ -1,0 +1,43 @@
+# =============================================================================
+# .gitignore — Alzheimer's GNN Detection Project
+# =============================================================================
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+include/
+
+# Python Bytecode & Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+
+# Datasets (Local Directories)
+AugmentedAlzheimerDataset/
+OriginalDataset/
+augmented-alzheimer-mri-dataset.zip
+covid19-image-dataset.zip
+
+# GNN Local Project Cached Graphs
+# Ignore the large graph caches to save disk space on Git
+gnn_alzheimer_local/outputs/graph_cache/
+**/outputs/graph_cache/
+
+# Keep empty git folders tracked but empty
+!gnn_alzheimer_local/outputs/figures/.gitkeep
+!gnn_alzheimer_local/outputs/models/.gitkeep
+!gnn_alzheimer_local/results/.gitkeep
+
+# IDEs & System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
