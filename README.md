@@ -12,6 +12,7 @@ To validate GAT's performance, we evaluate it against a **Conventional CNN basel
 GNN/
 ├── Alzheimer.ipynb               # Phase 1: CNN Baseline notebook (TensorFlow/Keras)
 ├── GNN_Alzheimer_GAT_Colab.ipynb # Phase 2: GAT + XAI Google Colab notebook (PyTorch)
+├── GNN_Alzheimer_ML_Benchmark_Colab.ipynb # Phase 3: ML Comparative Benchmark notebook (Colab)
 ├── .gitignore                    # Excludes venv, large datasets, and graph caches
 ├── README.md                     # Master project documentation (this file)
 │
@@ -97,6 +98,20 @@ To explain the GAT model's accuracy to reviewers and academic panels, consider t
 
 ## 🔎 Explainable AI (XAI)
 We integrate **GNNExplainer** (`torch_geometric.explain.GNNExplainer`) to learn node and edge importance masks per prediction. GATConv attention coefficients are extracted during the forward pass. These are combined to produce high-DPI attention heatmaps overlaid on the original MRIs (saved to `outputs/figures/`), showing the clinical areas driving the prediction alongside automated text explanations.
+
+---
+
+## ☁️ Quick Start: Google Colab
+
+You can run both deep learning and machine learning baseline pipelines on Google Colab:
+
+1. **GAT + XAI Model:** Open [GNN_Alzheimer_GAT_Colab.ipynb](GNN_Alzheimer_GAT_Colab.ipynb) in Colab.
+2. **ML Comparative Benchmark:** Open [GNN_Alzheimer_ML_Benchmark_Colab.ipynb](GNN_Alzheimer_ML_Benchmark_Colab.ipynb) in Colab.
+
+### Instructions:
+* In Colab, select **Runtime > Change runtime type** and choose **T4 GPU** for hardware acceleration.
+* Upload your `kaggle.json` key (or mount Google Drive) when prompted to automatically download the Augmented Alzheimer dataset.
+* Select **Runtime > Run all** to run the complete feature extraction, model training, evaluation, plotting, and downloading of comparative sheets.
 
 ---
 
